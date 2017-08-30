@@ -139,7 +139,7 @@ h2{
     background: red;
     font-weight: 700;
     position: absolute;
-    bottom: 0;
+    bottom:0;
     right: 0;
     overflow: hidden;
 
@@ -202,7 +202,17 @@ width: 150px;
   header {
     text-align: center;
   }
-  .profile-image {
+   
+    
+    .profile-image {
     width: 200px;
   }
+}
+
+@media(max-width:485px){
+    
+    .btn{
+   display: none;
+
+    
 }
