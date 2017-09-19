@@ -184,12 +184,17 @@ h3~p{
   
     header .col-narrow{
         margin-top: -50px;
-        margin-bottom: 7px;
+    padding-top: 10px;
+        padding-bottom: 10px;
+        
         
     }
     
     header .col-wide{
-        margin-top: -25px;
+        padding-top: 10px;
+        text-align: left;
+        margin-top: -60px;
+        padding-bottom: 10px;
     }
     .col-wide {
     width: 70%;
