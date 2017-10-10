@@ -80,3 +80,23 @@ img{
     padding: 10px;
     
 }
+
+a p{
+    color: black;
+    
+}
+
+a p:hover{
+    cursor: pointer;
+    
+    text-decoration: none !important;
+}
+
+footer{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 100px;
+    vertical-align: middle;
+}

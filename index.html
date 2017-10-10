@@ -31,9 +31,8 @@ Try It Yourself »
       
         <ul class="nav navbar-nav">
         <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#">Work</a></li>
+        <li><a href="#work">Work</a></li>
         <li><a href="#projects">Projects</a></li> 
-         <li><a href="#">Contact</a></li> 
       </ul>
       
        
@@ -62,7 +61,8 @@ Try It Yourself »
     
     
     </div>
- <div class=" panel-default aboutme" id="aboutme">
+ <div id="aboutme" style="height:50px"></div>
+    <div class=" panel-default aboutme">
    <h3>About Me</h3>
      <div class="panel-body">
        <p>I am a Computer Engineering graduate student at Syracuse University with a great interest for Android Application development. I am very passionate and determined about developing consumer friendly mobile applications with rich User Interfaces. As a hardworking individual, I strive to have an excellent grasp over the basics of any technology before going into complex stuff, and I believe this is what makes me stand out and do well as a developer.I am an Electronics Engineering graduate from University of Mumbai and currently working towards a Master's Degree in Computer Engineering from Syracuse University.</p>
@@ -75,27 +75,104 @@ Try It Yourself »
     
     <div class="col-sm-6">
     <div  style="width:100%" class="w3-hover-shadow" >
-    <div class="w3-card-4" >
+    <div class="w3-card-4" data-toggle="modal" data-target="#mymodal" >
+        
     <img src="su4.jpg" alt="syracuse University" style="width:100%">
     <div class="w3-container w3-center " style="width:100%">
-      <p class="panel-body">Syracuse University, Syracuse New York</p>
+     <a  data-toggle="modal" data-target="#suCourses"> <p class="panel-body">Syracuse University, Syracuse New York</p></a>
     </div>
   </div>
     </div>
     </div>
+    <div id="suCourses" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- suCourses Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Syracuse University</h4>
+          <p>Dept. of Electrical engineering and Computer Science </p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Advanced Data Structures and Algorithms</li>
+          <li>Object Oriented Design in C++</li>
+          <li>Android Programming </li>
+            <li>Human Computer Interaction</li>
+            <li>Database Management Systems</li>
+            <li>Advanced Computer Architecture</li>
+            <li>Digital Machine Design </li>
+            
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+    
+    
+        <div id="muCourses" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- muCourses Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Mumbai University</h4>
+          <p>Dept. Electronics Engineering </p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Basics of programming in C++</li>
+          <li>Basics of Programming in Java</li>
+          <li>Microprocessors and Microcontrollers</li>
+            <li>Robotics and Automation</li>
+            <li>Real-Time Operating Systems </li>
+            
+            
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+    
     
      <div class=" col-sm-6">
     <div  style="width:100%" class="w3-hover-shadow">
     <div class="w3-card-4 " >
     <img src="mu.jpg" alt="mumbai University" style="width:100%">
     <div class="w3-container w3-center " style="width:100%">
-      <p class="panel-body">University of Mumbai, Mumbai Maharashtra</p>
+        <a  data-toggle="modal" data-target="#muCourses"> <p class="panel-body">University of Mumbai, Mumbai Maharashtra</p></a>
     </div>
   </div>
     </div>
     </div>
     <div class="clear">
     </div>
+    <div id="work" style="height:50px"></div>
+
+    <div class=" panel-default aboutme">
+   <h3>Work</h3>
+        <h3>Dynagarde</h3>
+        <ul><h5 style="display:inline">Android Developer,</h5><em> from April 2017-Present</em>
+      <li>Developing an android application that tracks the location of a Subject Protection Device(SPD).</li>
+            <li>Implemented functionality for users to use some pre-defined geofences in-order to monitor the SPD’s location.</li>
+<li>Working mainly on developing the User Interface for the application, its user authentication, data storage capabilities and its hardware integration.</li>
+        </ul>    
+    </div>
+
+        <div id="projects" style="height:50px"></div>
+
     <div id="projects" >
     <h3>Projects</h3>
         <div class="panel-group">
@@ -156,7 +233,9 @@ Try It Yourself »
         
         </div>
     
-    
+    <footer>
+        <h1>Lets Stay in Touch!</h1>
+    </footer>
   
     
     
