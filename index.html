@@ -14,7 +14,19 @@ Try It Yourself »
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
     <script>
-$(document).ready(function(){
+
+        $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+        
+        
+        
+        $(document).ready(function(){
   // Add smooth scrolling to all links
   $("div.jumbotron a").on('click', function(event) {
 
@@ -40,6 +52,10 @@ $(document).ready(function(){
       });
     } // End if
   });
+
+
+
+
 });
 </script>
     
