@@ -1,290 +1,356 @@
+<!-- 
+File name : index.html
+Developer : Mandar Mathure (mmathure@syr.edu)
+Machine : Lenovo y700 , Windows 10
+Description : 
+This file is in conjunction with two other files - script.js and styles.css. 
+This is the main file that references the stylesheet and a script file. 
+It contains the main layout of the webpage with all the html components.
+Some html elements have inline styles in this file so that they take precedence over other styles. 
+--> 
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://use.fontawesome.com/ade754f024.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-    <script>
-
-        $(document).click(function (event) {
-    var clickover = $(event.target);
-    var $navbar = $(".navbar-collapse");               
-    var _opened = $navbar.hasClass("in");
-    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
-        $navbar.collapse('hide');
-    }
-});
-        
-        
-        
-        $(document).ready(function(){
-  // Add smooth scrolling to all links
-  $("div.jumbotron a").on('click', function(event) {
-
-    // Make sure this.hash has a value before overriding default behavior
-    if (this.hash !== "") {
-      // Prevent default anchor click behavior
-      event.preventDefault();
-
-      // Store hash
-     
-      var hash = this.hash;
-
-      // Using jQuery's animate() method to add smooth page scroll
-      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-      
-      
-      $('html, body').animate({
-        scrollTop: $(hash).offset().top
-      }, 800, function(){
-   
-        // Add hash (#) to URL when done scrolling (default click behavior)
-        window.location.hash = hash;
-      });
-    } // End if
-  });
-
-
-
-
-});
-</script>
-    
+    <head>
+        <title>Schedule K-1(Form 1065)</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     </head>
+    <body class="main">
+        <div class="sliderButtons">
+            <button type="button" class="btn btn-default btn-circle btn-circle-deactive" id="progressBtn1"><b>1</b>
+            </button>
+            <button type="button" class="btn btn-default btn-circle btn-circle-deactive" id="progressBtn2"><b>2</b>
+            </button>
+            <button type="button" class="btn btn-default btn-circle btn-circle-deactive" id="progressBtn3"><b>3</b>
+            </button>
+        </div>
+        <!-- main container which holds the three parts of the form--> 
 
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
-
-   <div class="jumbotron" id="jumbotron">
-  <nav class="navbar navbar-inverse  navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#home">Mandar Mathure</a>
-    </div>
-    <div class="collapse navbar-collapse " id="myNavbar">
-      
-        <ul class="nav navbar-nav">
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#projects">Projects</a></li> 
-      </ul>
-      
-       
-    
-        
-        
-    </div>
-      
-       
-      
-  </div>
-</nav>
-       
-       
-       <div class="container-fluid text-center">
-    <h1>MANDAR MATHURE</h1>      
-           <span class="icons"> <a href="mailto:mmathure@syr.edu"><i class="fa fa-envelope-o " aria-hidden="true"> </i></a></span><span class="icons"><a href="https://www.linkedin.com/in/mandar-mathure-3809b8126/" target="_blank"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
-           </span>
-           <span class="icons"><a href="https://github.com/mandarm2593"><i class="fa fa-github" aria-hidden="true"></i>
-</a>
-</span>
-
-  </div>
-    
-   
-    
-    
-    </div>
- <div id="aboutme" style="height:50px"></div>
-    <div class=" panel-default aboutme">
-   <h3>About Me</h3>
-     <div class="panel-body">
-       <p>I am a Computer Engineering graduate student at Syracuse University with a great interest for Android Application development. I am very passionate and determined about developing consumer friendly mobile applications with rich User Interfaces. As a hardworking individual, I strive to have an excellent grasp over the basics of any technology before going into complex stuff, and I believe this is what makes me stand out and do well as a developer.I am an Electronics Engineering graduate from University of Mumbai and currently working towards a Master's Degree in Computer Engineering from Syracuse University.</p>
-     </div>
-    </div>
-
-  
-    
-    
-    
-    <div class="col-sm-6">
-    <div  style="width:100%" class="w3-hover-shadow" >
-    <div class="w3-card-4" data-toggle="modal" data-target="#mymodal" >
-        
-    <img src="su4.jpg" alt="syracuse University" style="width:100%">
-    <div class="w3-container w3-center " style="width:100%">
-     <a  data-toggle="modal" data-target="#suCourses"> <p class="panel-body">Syracuse University, Syracuse New York</p></a>
-    </div>
-  </div>
-    </div>
-    </div>
-    <div id="suCourses" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- suCourses Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Syracuse University</h4>
-          <p>Dept. of Electrical engineering and Computer Science </p>
-      </div>
-      <div class="modal-body">
-        <ul>
-          <li>Advanced Data Structures and Algorithms</li>
-          <li>Object Oriented Design in C++</li>
-          <li>Android Programming </li>
-            <li>Human Computer Interaction</li>
-            <li>Database Management Systems</li>
-            <li>Advanced Computer Architecture</li>
-            <li>Digital Machine Design </li>
-            
-          </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-      
-  </div>
-</div>
-    
-    
-        <div id="muCourses" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- muCourses Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Mumbai University</h4>
-          <p>Dept. Electronics Engineering </p>
-      </div>
-      <div class="modal-body">
-        <ul>
-          <li>Basics of programming in C++</li>
-          <li>Basics of Programming in Java</li>
-          <li>Microprocessors and Microcontrollers</li>
-            <li>Robotics and Automation</li>
-            <li>Real-Time Operating Systems </li>
-            
-            
-          </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-      
-  </div>
-</div>
-    
-    
-     <div class=" col-sm-6">
-    <div  style="width:100%" class="w3-hover-shadow">
-    <div class="w3-card-4 " >
-    <img src="mu.jpg" alt="mumbai University" style="width:100%">
-    <div class="w3-container w3-center " style="width:100%">
-        <a  data-toggle="modal" data-target="#muCourses"> <p class="panel-body">University of Mumbai, Mumbai Maharashtra</p></a>
-    </div>
-  </div>
-    </div>
-    </div>
-    <div class="clear">
-    </div>
-    <div id="work" style="height:50px"></div>
-
-    <div class=" panel-default aboutme">
-   <h3>Work</h3>
-        <h3>Dynagarde</h3>
-        <ul><h5 style="display:inline">Android Developer,</h5><em> from April 2017-Present</em>
-      <li>Developing an android application that tracks the location of a Subject Protection Device(SPD).</li>
-            <li>Implemented functionality for users to use some pre-defined geofences in-order to monitor the SPD’s location.</li>
-<li>Working mainly on developing the User Interface for the application, its user authentication, data storage capabilities and its hardware integration.</li>
-        </ul>    
-    </div>
-
-        <div id="projects" style="height:50px"></div>
-
-    <div id="projects" >
-    <h3>Projects</h3>
-        <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse1">Ride On – A Carpooling Android Application</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse">
-      <div class="panel-body">An android application that connects users travelling from the same location to a common destination. The application works on real time data stored in Firebase Database and other user centric information stored in Firebase Storage supported by Google Cloud.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://play.google.com/store/apps/details?id=com.nita.rideon&hl=en" >Playstore</a></div>
-    </div>
-  </div>
-</div>
-    <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse2">Dependency Based Code Publisher using C++ and HTML</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body">Developed a repository that manages and publishes source code files as web pages with embedded child links. Each link refers to a code file that the displayed file depends on. The publisher generates an HTML file for each C++ source file. The inputs to the publisher are C++ source code files and its outputs are HTML code.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
-    </div>
-  </div>
-</div>
-            
-        
-         <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse3">Implemented a Key/Value Store Database using C++</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Created a key/value store database using C++ STL containers and an XML document class which helped to read, write and persist database contents in a XML file. The project supported various functionalities like adding key/value pairs, editing text metadata, replacing existing values instance with a new instance and, addition and deletion of relationship with other key/value pairs. Implemented a query mechanism that supported various queries for the contents of the database.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/NoSqlDataBase" >Github</a></div>
-    </div>
-  </div>
-</div>
-        
-        <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse4">Built a Type-based Dependency Analyzer using C++</a>
-      </h4>
-    </div>
-    <div id="collapse4" class="panel-collapse collapse">
-      <div class="panel-body">The analyzer extracts lexical content from source files and builds a Type Table and an Abstract Syntax Tree. Dependency analysis is performed on a set of files and the results are written, in XML format, to a specified file.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
-    </div>
-  </div>
-</div>
-        
+        <div class="container">
+            <!-- Part 1 of the form starts here --> 
+            <div id="part1" class="visible">
+                <div class="row">
+                    <div class="col-md-4"><b>Schedule K-1 </b><em>(Form 1065)</em></div>
+                    <div class="col-md-4"><b>Part 1 : Information About the Partner</b></div>
+                    <div class="col-md-4 year"><b>2017</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group" style="padding:10px">
+                            <label>Partnership's Employer Identification Number </label>
+                            <input class="inputWidth" type="text" placeholder="Enter 6 digit ID" required>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label> Partner’s name, address, city, state, and ZIP code</label><br>
+                            <textarea>
+                            </textarea>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="row" style="padding:20px"  >
+                            <div class="col-md-2">
+                                <input type="checkbox" value=" "> 
+                            </div>
+                            <div class="col-md-10" style="padding-top:2px">
+                                If this partner is a retirement plan (IRA/SEP/Keogh/etc.)?
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label>IRS Center where partnership filed return </label>
+                            <input class="inputWidth" type="text" placeholder="Please enter full address">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Part 2 of the form starts here --> 
+            <div id="part2" class="invis">
+                <div class="row">
+                    <div class="col-md-4"><b>Schedule K-1 </b><em>(Form 1065)</em></div>
+                    <div class="col-md-4"><b>Part 2 : Information About the Partner</b></div>
+                    <div class="col-md-4 year"><b>2017</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="form-group">
+                            <label>Partnership's Employer Identification Number </label>
+                            <input class="inputWidth" type="text" placeholder="Enter 6 digit ID">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <label> Partner’s name, address, city, state, and ZIP code</label><br>
+                            <textarea>
+                            </textarea>    
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div id="radioDiv1" class="divAdjust">
+                            <div class="row">
+                                <div class="col-md-2" id="radio3">
+                                    <input type="radio" name="genLim"> 
+                                </div>
+                                <div class="col-md-10" id="radio3Name">
+                                    General partner or LLC member-manager
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-2" id="radio4">
+                                    <input type="radio" name="genLim"> 
+                                </div>
+                                <div class="col-md-10" id="radio4Name">
+                                    Limited partner or other LLC member
+                                </div>
+                            </div>
+                        </div>
+                        <div class="divWithTopBorder" id="radioDiv2">
+                            <div class="row">
+                                <div class="col-md-2" id="radio1">
+                                    <input type="radio" name="domFor"> 
+                                </div>
+                                <div class="col-md-10" id="radio1Name">
+                                    Select if Domestic Partner
+                                </div>
+                            </div>
+                            <div class="row" >
+                                <div class="col-md-2" id="radio2">
+                                    <input type="radio" name="domFor"> 
+                                </div>
+                                <div class="col-md-10" id="radio2Name">
+                                    Select if Foreign Partner
+                                </div>
+                            </div>
+                            <div class="divWithTopBorder">
+                                <div class="form-group">
+                                    <label>What Type of Entity is this partner?</label>
+                                    <input class="inputWidth" type="text">
+                                </div>
+                            </div>
+                            <div class="row divWithTopBorder"  >
+                                <div class="col-md-2">
+                                    <input type="checkbox" value=" "> 
+                                </div>
+                                <div class="col-md-10">
+                                    If this partner is a retirement plan (IRA/SEP/Keogh/etc.)?
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        Partner’s share of Profit, Loss and Capital
+                        <div class="borders">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th></th>
+                                        <th>Beginning</th>
+                                        <th>Ending</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Profit</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Loss</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Capital</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                        <td>  <input class="inputWidth" type="text" placeholder="Value in %">&nbsp;%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="divWithInlineInputs">
+                            <div class="row">        Partner’s share of liabilities at year end:</div>
+                            <div class="row">
+                                <div class="col-md-6">Nonrecourses</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                                <div class="col-md-6">Qualified Nonrecourse Financing</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                                <div class="col-md-6">Recourse</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            </div>
+                        </div>
+                        <div class="divWithInlineInputs divWithTopBorder">
+                            <div class="row">        Partner’s capital account analysis:</div>
+                            <div class="row">
+                                <div class="col-md-6">Beginning capital account</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                                <div class="col-md-6">Capital contributed during the year</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Vlaue in USD"></div>
+                                <div class="col-md-6">Current year increase (decrease) </div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                                <div class="col-md-6">Withdrawals and distributions</div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value im USD"></div>
+                                <div class="col-md-6">Ending capital account  </div>
+                                <div class="col-md-6">$&nbsp;<input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            </div>
+                            <div class="row divWithTopBorder">
+                                <div class="col-md-3">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="checkbox" name="domestic" value=" "> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center;">Tax Basis</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="checkbox" name="domestic" value=" "> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center;">Section 704(b) book</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="checkbox" name="domestic" value=" "> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center;">GAAP</div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="checkbox" name="domestic" value=" "> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center;">Other</div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8" style="border:0;">Did the partner contribute property with a built-in gain or loss?</div>
+                                <div class="col-md-2">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="radio" name="gainLoss" class="radio"> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center">Yes             
+                                    </div>
+                                </div>
+                                <div class="col-md-2">
+                                    <div class="col-md-4" style="border:0;">
+                                        <input type="radio" name="gainLoss" class="radio"> 
+                                    </div>
+                                    <div class="col-md-8" style="border:0;text-align:center">No           
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Part 3 of the form starts here --> 
+            <div id="part3" class="invis">
+                <div class="row">
+                    <div class="col-md-4"><b>Schedule K-1 </b><em>(Form 1065)</em></div>
+                    <div class="col-md-4"><b>Part 3 : Partner's Share of Income, Deductions, Credits etc.</b></div>
+                    <div class="col-md-4 year"><b>2017</b></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="divAdjust">
+                            <div class="form-group">
+                                <label>Credits </label>
+                                <br> 1&nbsp;<input type="text" style="width:50%;" placeholder="Value in USD">
+                                <br> <br>   2&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">
+                            </div>
+                        </div>
+                        <div class="divWithTopBorder">
+                            <div class="form-group">
+                                <label>Foreign Transactions </label>
+                                <br> 1&nbsp;<input type="text" style="width:50%;" placeholder="Value in USD">
+                                <br> <br>   2&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">
+                                <br><br> 3&nbsp;<input type="text" style="width:50%;" placeholder="Value in USD">
+                                <br> <br>   4&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">   
+                                <br> <br>   5&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">   
+                            </div>
+                        </div>
+                        <div class="divWithTopBorder">
+                            <div class="form-group">
+                                <label>Alternative minimum Tax(AMT) items</label>
+                                <br> 1&nbsp;<input type="text" style="width:50%;" placeholder="value in USD">
+                                <br> <br>   2&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">
+                            </div>
+                        </div>
+                        <div class="divWithTopBorder">
+                            <div class="form-group">
+                                <label>Tax-exempt income and nondeductible expenses 
+                                </label>
+                                <br> 1&nbsp;<input type="text" style="width:50%;" placeholder="Value in USD">
+                                <br> <br>   2&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">
+                            </div>
+                        </div>
+                        <div class="divWithTopBorder">
+                            <div class="form-group">
+                                <label>Distributions
+                                </label>
+                                <br> 1&nbsp;<input type="text" style="width:50%;" placeholder="Value in USD">
+                                <br> <br>   2&nbsp;<input  style="width:50%;" type="text" placeholder="Value in USD">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8" style="border:0;">
+                        <div class="row">
+                            <div class="col-md-6" style="border:0;">Ordinary Business Income(loss)</div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Net rental real estate income (loss)</div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Other net rental income (loss)</div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Guaranteed payments</div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Interest income </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Ordinary dividends </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Qualified dividends </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Royalties</div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Net short-term capital gain (loss) </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Net long-term capital gain (loss) </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Collectibles (28%) gain (loss) </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Unrecaptured section 1250 gain </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Net section 1231 gain (loss) </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Section 179 deduction </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                            <div class="col-md-6" style="border:0;">Self-employment earnings (loss) </div>
+                            <div class="col-md-6" style="border:0;"><input class="inlineInput" type="text" placeholder="Value in USD"></div>
+                        </div>
+                        <div class="divWithTopBorder">
+                            <div class="row divWithInlineInputs">
+                                Additional Information : 
+                                <br> 
+                                <textarea rows="10" cols="50"></textarea>
+                                <p>For detailed instructions refer page 2 of <a href="https://www.irs.gov/pub/irs-pdf/f1065sk1.pdf"  target="_blank">this</a> link. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="myDiv">
+            <button type="button" class="btn customButton disabled" id="prevButton">Previous</button>
+            <button type="button" class="btn customButton active" id="nextButton">Next</button>
         </div>
     
-    <footer>
-        <h1>Lets Stay in Touch!</h1>
-    </footer>
-  
-    
-    
+     <script src="script.js" type="text/javascript"></script>
     </body>
-
 </html>
