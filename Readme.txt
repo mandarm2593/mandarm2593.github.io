@@ -12,3 +12,4 @@ TECHNOLOGIES USED : HTML5, CSS3, jQuery, Bootstrap 3
 
 Instructions : Double click on the index.html file and you are good to go. Test the user navigation by clicking on the 
 next and previous buttons or any of the progress buttons on the top. 
+The website is also hosted at https://mandarm2593.github.io/
