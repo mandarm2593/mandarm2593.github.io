@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   <script src="https://use.fontawesome.com/ade754f024.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="typed.js" type="text/javascript"></script>
+    <script>
+
+       
+        
+        
+        
+        $(document).click(function (event) {
+    var clickover = $(event.target);
+    var $navbar = $(".navbar-collapse");               
+    var _opened = $navbar.hasClass("in");
+    if (_opened === true && !clickover.hasClass("navbar-toggle")) {      
+        $navbar.collapse('hide');
+    }
+});
+        
+        
+        
+        $(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("div.jumbotron a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+     
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      
+      
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+
+
+
+
+});
+</script>
+    
+    </head>
+
+<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
+
+   <div class="jumbotron" id="jumbotron">
+  <nav class="navbar navbar-inverse  navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="#home">Mandar Mathure</a>
+    </div>
+    <div class="collapse navbar-collapse " id="myNavbar">
+      
+        <ul class="nav navbar-nav">
+        <li><a href="#aboutme">About Me</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#projects">Projects</a></li> 
+      </ul>
+      
+       
+    
+        
+        
+    </div>
+      
+       
+      
+  </div>
+</nav>
+       
+       
+       <div class="container-fluid text-center">
+    <h1>MANDAR MATHURE</h1>  <br>    
+    <span class="typed" style="font-size:20px;"></span>
+
+  </div>
+    
+   
+    
+    
+    </div>
+ <div id="aboutme" style="height:50px"></div>
+    <div class=" panel-default aboutme">
+   <h3>About Me</h3>
+     <div class="panel-body">
+       <p>I am a Computer Engineering graduate student at Syracuse University with a great interest for Android Application development. I am very passionate and determined about developing consumer friendly mobile applications with rich User Interfaces. As a hardworking individual, I strive to have an excellent grasp over the basics of any technology before going into complex stuff, and I believe this is what makes me stand out and do well as a developer.I am an Electronics Engineering graduate from University of Mumbai and currently working towards a Master's Degree in Computer Engineering from Syracuse University.</p>
+     </div>
+    </div>
+
+  
+    
+    
+    
+    <div class="col-sm-6">
+    <div  style="width:100%" class="w3-hover-shadow" >
+    <div class="w3-card-4" data-toggle="modal" data-target="#mymodal" >
+        
+    <img src="su4.jpg" alt="syracuse University" style="width:100%">
+    <div class="w3-container w3-center " style="width:100%">
+     <a  data-toggle="modal" data-target="#suCourses"> <p class="panel-body">Syracuse University, Syracuse New York</p></a>
+    </div>
+  </div>
+    </div>
+    </div>
+    <div id="suCourses" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- suCourses Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Syracuse University</h4>
+          <p>Dept. of Electrical engineering and Computer Science </p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Advanced Data Structures and Algorithms</li>
+          <li>Object Oriented Design in C++</li>
+          <li>Android Programming </li>
+            <li>Human Computer Interaction</li>
+            <li>Database Management Systems</li>
+            <li>Advanced Computer Architecture</li>
+            <li>Digital Machine Design </li>
+            
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+    
+    
+        <div id="muCourses" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- muCourses Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Mumbai University</h4>
+          <p>Dept. Electronics Engineering </p>
+      </div>
+      <div class="modal-body">
+        <ul>
+          <li>Basics of programming in C++</li>
+          <li>Basics of Programming in Java</li>
+          <li>Microprocessors and Microcontrollers</li>
+            <li>Robotics and Automation</li>
+            <li>Real-Time Operating Systems </li>
+            
+            
+          </ul>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+
+      
+  </div>
+</div>
+    
+    
+     <div class=" col-sm-6">
+    <div  style="width:100%" class="w3-hover-shadow">
+    <div class="w3-card-4 " >
+    <img src="mu.jpg" alt="mumbai University" style="width:100%">
+    <div class="w3-container w3-center " style="width:100%">
+        <a  data-toggle="modal" data-target="#muCourses"> <p class="panel-body">University of Mumbai, Mumbai Maharashtra</p></a>
+    </div>
+  </div>
+    </div>
+    </div>
+    <div class="clear">
+    </div>
+    <div id="work" style="height:50px"></div>
+
+    <div class=" panel-default aboutme">
+   <h3>Work</h3>
+        <h3>Dynagarde</h3>
+        <ul><h5 style="display:inline">Android Developer,</h5><em> from April 2017-Present</em>
+      <li>Developing an android application that tracks the location of a Subject Protection Device(SPD).</li>
+            <li>Implemented functionality for users to use some pre-defined geofences in-order to monitor the SPD’s location.</li>
+<li>Working mainly on developing the User Interface for the application, its user authentication, data storage capabilities and its hardware integration.</li>
+        </ul>    
+    </div>
+
+        <div id="projects" style="height:50px"></div>
+
+    <div id="projects" >
+    <h3>Projects</h3>
+        <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse1">Ride On – A Carpooling Android Application</a>
+      </h4>
+    </div>
+    <div id="collapse1" class="panel-collapse collapse">
+      <div class="panel-body">An android application that connects users travelling from the same location to a common destination. The application works on real time data stored in Firebase Database and other user centric information stored in Firebase Storage supported by Google Cloud.</div>
+        <div class="panel-footer"><a class ="btn btn-default" href="https://play.google.com/store/apps/details?id=com.nita.rideon&hl=en" >Playstore</a></div>
+    </div>
+  </div>
+</div>
+    <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse2">Dependency Based Code Publisher using C++ and HTML</a>
+      </h4>
+    </div>
+    <div id="collapse2" class="panel-collapse collapse">
+      <div class="panel-body">Developed a repository that manages and publishes source code files as web pages with embedded child links. Each link refers to a code file that the displayed file depends on. The publisher generates an HTML file for each C++ source file. The inputs to the publisher are C++ source code files and its outputs are HTML code.</div>
+        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
+    </div>
+  </div>
+</div>
+            
+        
+         <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse3">Implemented a Key/Value Store Database using C++</a>
+      </h4>
+    </div>
+    <div id="collapse3" class="panel-collapse collapse">
+      <div class="panel-body">Created a key/value store database using C++ STL containers and an XML document class which helped to read, write and persist database contents in a XML file. The project supported various functionalities like adding key/value pairs, editing text metadata, replacing existing values instance with a new instance and, addition and deletion of relationship with other key/value pairs. Implemented a query mechanism that supported various queries for the contents of the database.</div>
+        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/NoSqlDataBase" >Github</a></div>
+    </div>
+  </div>
+</div>
+        
+        <div class="panel-group">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" href="#collapse4">Built a Type-based Dependency Analyzer using C++</a>
+      </h4>
+    </div>
+    <div id="collapse4" class="panel-collapse collapse">
+      <div class="panel-body">The analyzer extracts lexical content from source files and builds a Type Table and an Abstract Syntax Tree. Dependency analysis is performed on a set of files and the results are written, in XML format, to a specified file.</div>
+        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
+    </div>
+  </div>
+</div>
+        
+        </div>
+    
+    <footer>
+       <span class="icons"> <a href="mailto:mmathure@syr.edu"><i class="fa fa-envelope-o " aria-hidden="true"> </i></a></span><span class="icons"><a href="https://www.linkedin.com/in/mandar-mathure-3809b8126/" target="_blank"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+           </span>
+           <span class="icons"><a href="https://github.com/mandarm2593"><i class="fa fa-github" aria-hidden="true"></i>
+</a>
+</span>
+        <h1>Lets Stay in Touch!</h1>
+    </footer>
+  
+    <script>var options = {
+  strings: ["Computer Engineer", "Web Developer","Android Developer"],
+  typeSpeed: 50,
+            backSpeed:0,
+    loop:true        
+}
+
+var typed = new Typed(".typed", options);</script>
+    
+    </body>
+
+</html>
