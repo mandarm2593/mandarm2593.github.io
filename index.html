@@ -1,17 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <script src="https://use.fontawesome.com/ade754f024.js"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-
-    <link rel="stylesheet" type="text/css" href="styles.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="typed.js" type="text/javascript"></script>
+<html>
+   <head>
+      <title>Mandar Mathure</title>
+      <link rel="stylesheet" href="https://bootswatch.com/4/sketchy/bootstrap.min.css" >
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <link type="text/css" rel="stylesheet" href="styles.css">
+      <!-- Latest compiled JavaScript -->
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.bundle.min.js"></script>
+   
     <script>
 
        
@@ -31,7 +27,7 @@
         
         $(document).ready(function(){
   // Add smooth scrolling to all links
-  $("div.jumbotron a").on('click', function(event) {
+  $("#myDiv a").on('click', function(event) {
 
     // Make sure this.hash has a value before overriding default behavior
     if (this.hash !== "") {
@@ -62,118 +58,67 @@
 });
 </script>
     
+    
+    
     </head>
-
-<body data-spy="scroll" data-target=".navbar" data-offset="50" id="home">
-
-   <div class="jumbotron" id="jumbotron">
-  <nav class="navbar navbar-inverse  navbar-fixed-top">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-      <a class="navbar-brand" href="#home">Mandar Mathure</a>
-    </div>
-    <div class="collapse navbar-collapse " id="myNavbar">
-      
-        <ul class="nav navbar-nav">
-        <li><a href="#aboutme">About Me</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#projects">Projects</a></li> 
+   <body>
+      <div id="myDiv">
+         <nav class="navbar navbar-expand-lg navbar-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation" style="">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarColor01">
+                <ul class="nav navbar-nav">
+        <li><a class="nav-link" href="#about">About Me</a></li>
+        <li><a class="nav-link" href="#work">Work</a></li>
+        <li><a class="nav-link" href="#projects">Projects</a></li> 
+        <li><a class="nav-link" href="#skills">Skills</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li> 
       </ul>
-      
-       
-    
-        
-        
-    </div>
-      
-       
-      
-  </div>
-</nav>
-       
-       
-       <div class="container-fluid text-center">
-    <h1>MANDAR MATHURE</h1>  <br>    
-    <span class="typed" style="font-size:20px;"></span>
-
-  </div>
-    
+            </div>
+         </nav>
+         <div class="jumbotron">
+            <h1 class="display-3">Mandar Mathure</h1>
+            <p class="lead">Computer Engineer , Web Developer , Android Developer <a style="color:azure;" href="#mymodal" data-toggle="modal" >and....</a></p>
+             
    
-    
-    
-    </div>
- <div id="aboutme" style="height:50px"></div>
-    <div class=" panel-default aboutme">
-   <h3>About Me</h3>
-     <div class="panel-body">
-       <p>I am a Computer Engineering graduate student at Syracuse University with a great interest for Android Application development. I am very passionate and determined about developing consumer friendly mobile applications with rich User Interfaces. As a hardworking individual, I strive to have an excellent grasp over the basics of any technology before going into complex stuff, and I believe this is what makes me stand out and do well as a developer.I am an Electronics Engineering graduate from University of Mumbai and currently working towards a Master's Degree in Computer Engineering from Syracuse University.</p>
-     </div>
-    </div>
-
   
-    
-    
-    
-    <div class="col-sm-6">
-    <div  style="width:100%" class="w3-hover-shadow" >
-    <div class="w3-card-4" data-toggle="modal" data-target="#mymodal" >
-        
-    <img src="su4.jpg" alt="syracuse University" style="width:100%">
-    <div class="w3-container w3-center " style="width:100%">
-     <a  data-toggle="modal" data-target="#suCourses"> <p class="panel-body">Syracuse University, Syracuse New York</p></a>
-    </div>
-  </div>
-    </div>
-    </div>
-    <div id="suCourses" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- suCourses Modal content-->
+         </div>
+          
+          <div id ="mymodal" class="modal">
+  <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Syracuse University</h4>
-          <p>Dept. of Electrical engineering and Computer Science </p>
-      </div>
-      <div class="modal-body">
-        <ul>
-          <li>Advanced Data Structures and Algorithms</li>
+      <div class="modal-body" style="color:#212529;">
+        <h2>Education</h2>
+         <ul class="nav nav-tabs">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#home">MS. Computer Engineering</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#profile">BE Electronics Engineering</a>
+  </li>
+</ul>
+<div id="myTabContent" class="tab-content">
+  <div class="tab-pane fade show active" id="home">
+    <p style="padding-top:20px; font-size:20px;">Syracuse University</p>
+      <p>MSCE Aug 2016-May 2018</p>
+      
+     <ul>
+         <li>Internet Programming</li> 
+        <li>Android Programming </li>
+         <li>Advanced Data Structures and Algorithms</li>
           <li>Object Oriented Design in C++</li>
-          <li>Android Programming </li>
             <li>Human Computer Interaction</li>
             <li>Database Management Systems</li>
             <li>Advanced Computer Architecture</li>
-            <li>Digital Machine Design </li>
             
           </ul>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-      </div>
-    </div>
-
-      
   </div>
-</div>
-    
-    
-        <div id="muCourses" class="modal fade" role="dialog">
-  <div class="modal-dialog">
-
-    <!-- muCourses Modal content-->
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-        <h4 class="modal-title">Mumbai University</h4>
-          <p>Dept. Electronics Engineering </p>
-      </div>
-      <div class="modal-body">
-        <ul>
+  <div class="tab-pane fade" id="profile">
+   <p style="padding-top:20px; font-size:20px;">University of Mumbai</p>
+      <p>BE Electronics Aug 2011-Jun 2015</p>
+      
+      <ul>
           <li>Basics of programming in C++</li>
           <li>Basics of Programming in Java</li>
           <li>Microprocessors and Microcontrollers</li>
@@ -182,121 +127,393 @@
             
             
           </ul>
+  </div>
+ 
+</div> 
+          
+          
+          
+          
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
       </div>
     </div>
+  </div>
+</div>
+          
+          
+      </div>
+      <div class="container">
+         <div>
+            <blockquote class="blockquote text-center" style="padding:30px;">
+               <p class="mb-0">The people who think they are crazy enough to change the world, <br>are the ones who actually do!</p>
+                <footer class="blockquote-footer">Steve Jobs</footer>
+             </blockquote>
+         </div>
+         <div class="text-center" id="about">
+            <h1>About</h1>
+             <hr>
+            <p> I am a software developer with a Soldering Iron! I started out as an Electronics Engineer and got into software        development - which many people can relate to!
+               I love Web Development - creating consumer friendly web applications with rich, dynamic and powerful User             Interfaces. I strive to have an excellent grasp over the basics of any technology before going into complex          stuff, and I believe this is what makes me stand out and do well as a developer. 
+            </p>
+         </div>
+         <br>
+         <br>
+         <div id="work">
+            <h1 class="text-center">Work</h1>
+             <hr>
+            <div class="row">
+               <div class=" col-sm-6">
+                  <h3>iConsult</h3>
+                  <div id="myTabContent" class="tab-content">
+                    <ul>
+                      <li>Designing and developing a mobile friendly website for a client that specializes in home inspections.</li>
+                      <li>The website a provides high quality UI that can handle authentication and allowing users to schedule inspections.</li>
+                        <li>Used modern JavaScript frameworks that made the website responsive and adjust to the width of the device (Desktop, Mobile and Tablet)that it is being viewed on.</li>
+                      </ul>
+                      
+               </div>
+               </div>
+               <div class="col-sm-6">
+                  <h3>Dynagarde</h3>
+                  <div id="myTabContent" class="tab-content">
+                     <ul>
+                      <li>Developed an android application that showed the location of an embedded system called as Subject Protection Device(SPD).
+                        </li>
+                         <li>Implemented functionality for users to use some pre-defined geofences in-order to monitor the SPD’s location. </li>
+                      <li>Worked mainly on developing the User Interface for the application, its user authentication, data storage capabilities and its hardware integration.</li>
+                      <li>Programmed the embedded system for data exchange via on-board Bluetooth module and a custom integrated cellular chip.</li>
+                      </ul>
+                      
+                      
+                      <p>
+                      </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+          <br>
+          <div class="text-center" id="skills">
+          <h2>Skills</h2>
+              
+              <div>
+              
+                  <div class="row">
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div> Angular</div>
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 80%"></div>
+</div> React</div>
+              
+            
+    <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+</div> HTML/CSS</div>
 
+    <div class="col-sm-3">
+    <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+</div>Bootstrap</div>
+                      
+</div>
+                  <hr>
+              
+          <div class="row">
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+</div> jQuery</div>
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+</div> Javascript</div>
+              
+            
+    <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div> Typescript</div>
+
+    <div class="col-sm-3">
+    <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>Apache Cordova/Ionic</div>
+                      
+</div>     
+                  <hr>
+         <div class="row">
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="98" aria-valuemin="0" aria-valuemax="100" style="width: 98%;"></div>
+</div> C++</div>
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+</div> Java</div>
+              
+            
+    <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div> Nodejs</div>
+
+    <div class="col-sm-3">
+    <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 65%"></div>
+</div>PHP</div>
+                      
+</div>                 
+    <hr>
+                  <div class="row">
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+</div> MSSQL</div>
+  <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 90%"></div>
+</div> Google Firebase</div>
+              
+            
+    <div class="col-sm-3">
+      <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%"></div>
+</div> MySQL</div>
+
+    <div class="col-sm-3">
+    <div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>MongoDB</div>
+                      
+</div>        
+                  
+                  
+              </div>
+              
+              
+          </div>
+          <br>
+          <br>
+          <div class="text-center" id="projects">
+            <h1 >Projects</h1>
+             <hr>
+           
+              <div class="row">
+              
+              <div class="col-md-4"  >
+                  <div class="card">
+  <div class="card-body">
+    <a href="#depHtml" data-toggle="collapse"> <p class="card-title">Type-based Dependency Analyzer and Code Publisher using C++ and HTML</p></a>
+    <div id="depHtml" class="collapse"><p class="card-subtitle mb-2 text-muted">Feb 2017 – April 2017</p>
+    <div class="card-text">
+      <p>
+        Extracted lexical content from source files and performed dependency analysis on these files using a Type Table and an Abstract Syntax tree.
+          Generated HTML code from C++ source files and published them as Webpages with embedded child links. Each link refers to a code file that the displayed file depends on.
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+      </div>
+  </div>
+</div>           
+                  </div>
+                  
+                  <div class="col-md-4"  >
+                  <div class="card" >
+  <div class="card-body" >
+      <a href="#parkit" data-toggle="collapse"> <p class="card-title">Park It – Parking location saver Android Application</p></a>
+    <div id="parkit" class="collapse"><p class="card-subtitle mb-2 text-muted">Nov 2017 – Dec 2017</p>
+    <div class="card-text">
+      <p>
+        Developed an Hybrid android application using HTML, CSS, JavaScript along with Apache Cordova Framework that saves the location of the user’s parked vehicle.
+          Implemented a feature that retrieves the previous stored location and gives directions based on the user’s current location using Google maps and Geolocation API.
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+      </div>
       
   </div>
-</div>
-    
-    
-     <div class=" col-sm-6">
-    <div  style="width:100%" class="w3-hover-shadow">
-    <div class="w3-card-4 " >
-    <img src="mu.jpg" alt="mumbai University" style="width:100%">
-    <div class="w3-container w3-center " style="width:100%">
-        <a  data-toggle="modal" data-target="#muCourses"> <p class="panel-body">University of Mumbai, Mumbai Maharashtra</p></a>
-    </div>
+</div>           
+                  </div>
+                  
+                 <div class="col-md-4"  >
+                  <div class="card" >
+  <div class="card-body" >
+   <a href="#rideon" data-toggle="collapse"> <p class="card-title">Ride On! – A Carpooling Android Application</p></a>
+    <div id="rideon" class="collapse"><p class="card-subtitle mb-2 text-muted">February 2017 – May 2017</p>
+    <div class="card-text">
+      <p>
+        Developed an android application that connects users travelling from the same location to a common destination.
+          Real time data was stored in Firebase Database and other user centric information (contact, photo etc.) was stored in Firebase Storage supported by Google Cloud.
+          Used Google’s Distance Matrix REST API to calculate the distance and travelling time between the user entered source and destinations.
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
   </div>
-    </div>
-    </div>
-    <div class="clear">
-    </div>
-    <div id="work" style="height:50px"></div>
-
-    <div class=" panel-default aboutme">
-   <h3>Work</h3>
-        <h3>Dynagarde</h3>
-        <ul><h5 style="display:inline">Android Developer,</h5><em> from April 2017-Present</em>
-      <li>Developing an android application that tracks the location of a Subject Protection Device(SPD).</li>
-            <li>Implemented functionality for users to use some pre-defined geofences in-order to monitor the SPD’s location.</li>
-<li>Working mainly on developing the User Interface for the application, its user authentication, data storage capabilities and its hardware integration.</li>
-        </ul>    
-    </div>
-
-        <div id="projects" style="height:50px"></div>
-
-    <div id="projects" >
-    <h3>Projects</h3>
-        <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse1">Ride On – A Carpooling Android Application</a>
-      </h4>
-    </div>
-    <div id="collapse1" class="panel-collapse collapse">
-      <div class="panel-body">An android application that connects users travelling from the same location to a common destination. The application works on real time data stored in Firebase Database and other user centric information stored in Firebase Storage supported by Google Cloud.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://play.google.com/store/apps/details?id=com.nita.rideon&hl=en" >Playstore</a></div>
-    </div>
+</div>           
+                  </div>
+                  
+                 
+                  
+              
+              </div>
+              
+              <div class="row">
+              
+              
+              
+              
+              </div>
+              
+              
+              
+              
+         </div>
+              
+           <br>
+              
+                        <div class="row">
+              
+              <div class="col-md-4"  >
+                  <div class="card">
+  <div class="card-body">
+    <a href="#health" data-toggle="collapse"> <p class="card-title">Health Care Center Database Design and Implementation</p></a>
+    <div id="health" class="collapse"><p class="card-subtitle mb-2 text-muted">Nov 2017 – Dec 2017</p>
+    <div class="card-text">
+      <p>
+        Designed and implemented a database for Health Care Center using Vertabelo – an online database modelling tool and Microsoft SQL Server concepts of database design and development.
+          Addressed potential integrity and security issues of the data that would be inserted into the database.
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+      </div>
   </div>
-</div>
-    <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse2">Dependency Based Code Publisher using C++ and HTML</a>
-      </h4>
-    </div>
-    <div id="collapse2" class="panel-collapse collapse">
-      <div class="panel-body">Developed a repository that manages and publishes source code files as web pages with embedded child links. Each link refers to a code file that the displayed file depends on. The publisher generates an HTML file for each C++ source file. The inputs to the publisher are C++ source code files and its outputs are HTML code.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
-    </div>
+</div>           
+                  </div>
+                  
+                  <div class="col-md-4"  >
+                  <div class="card" >
+  <div class="card-body" >
+      <a href="#keyValue" data-toggle="collapse"> <p class="card-title">Implemented a Key/Value Store Database using C++</p></a>
+    <div id="keyValue" class="collapse"><p class="card-subtitle mb-2 text-muted">Jan 2017 – Feb 2017</p>
+    <div class="card-text">
+      <p>
+        Created a key/value store database using C++ STL containers and an XML document class which helped to read, write and persist database contents in a XML file.
+          Added functionalities like addition of key/value pairs, editing text metadata, replacing existing values instance with a new instance and, addition and deletion of relationship with other key/value pairs.
+          Implemented a query mechanism that supported various queries for the contents of the database.
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
+      </div>
+      
   </div>
-</div>
-            
-        
-         <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse3">Implemented a Key/Value Store Database using C++</a>
-      </h4>
-    </div>
-    <div id="collapse3" class="panel-collapse collapse">
-      <div class="panel-body">Created a key/value store database using C++ STL containers and an XML document class which helped to read, write and persist database contents in a XML file. The project supported various functionalities like adding key/value pairs, editing text metadata, replacing existing values instance with a new instance and, addition and deletion of relationship with other key/value pairs. Implemented a query mechanism that supported various queries for the contents of the database.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/NoSqlDataBase" >Github</a></div>
-    </div>
+</div>           
+                  </div>
+                  
+                 <div class="col-md-4"  >
+                  <div class="card" >
+  <div class="card-body" >
+   <a href="#burger" data-toggle="collapse"> <p class="card-title">Burger Builder! - using ReactJS, Redux and google Firebase</p></a>
+    <div id="burger" class="collapse"><p class="card-subtitle mb-2 text-muted">February 2018 – March 2018</p>
+    <div class="card-text">
+      <p>
+        Developed a web app that allows users to interactively customize their order of a particular snack(Burger in this case) and place an order to a fictional restaurant. Used Modern web development frameworks like ReactJS to develop the whole application and provide a smooth user experience. The user orders are stored in Firebase Real-time database and Firebase Authentication is used to register users and provide sign-in functinality.  
+        </p>
+      
+      </div>
+    <a href="#" class="card-link">Card link</a>
+    <a href="#" class="card-link">Another link</a>
   </div>
-</div>
-        
-        <div class="panel-group">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h4 class="panel-title">
-        <a data-toggle="collapse" href="#collapse4">Built a Type-based Dependency Analyzer using C++</a>
-      </h4>
-    </div>
-    <div id="collapse4" class="panel-collapse collapse">
-      <div class="panel-body">The analyzer extracts lexical content from source files and builds a Type Table and an Abstract Syntax Tree. Dependency analysis is performed on a set of files and the results are written, in XML format, to a specified file.</div>
-        <div class="panel-footer"><a class ="btn btn-default" href="https://github.com/mandarm2593/codeAnalyzer-publisher" >Github</a></div>
-    </div>
-  </div>
-</div>
-        
-        </div>
-    
-    <footer>
-       <span class="icons"> <a href="mailto:mmathure@syr.edu"><i class="fa fa-envelope-o " aria-hidden="true"> </i></a></span><span class="icons"><a href="https://www.linkedin.com/in/mandar-mathure-3809b8126/" target="_blank"><i class="fa fa-linkedin-square " aria-hidden="true"></i></a>
+</div>           
+                  </div>
+                  
+                 
+                  
+              
+              </div>
+              
+              <div class="row">
+              
+              
+              
+              
+              </div>
+              
+              
+              
+              
+         </div>
+              
+              
+              
+              
+              
+              
+          
+          
+          </div>
+          
+          
+          
+         
+          
+          
+          
+          
+          
+          
+      </div>
+       <br>
+       
+       <div  id="contact" style="padding:30px;">
+               <br> 
+        <div class="container"> <div class="row">
+            <div class="col-md-6 text-center">
+            <p style="font-size:40px; padding:10px;">Shoot a Message!!</p>
+                 <span class="icons"><a href="https://www.linkedin.com/in/mandar-mathure-3809b8126/" target="_blank"><img src="linkedin.jpg" style="heigth:30px;width:30px;"></a>
            </span>
-           <span class="icons"><a href="https://github.com/mandarm2593"><i class="fa fa-github" aria-hidden="true"></i>
+           <span class="icons"><a href="https://github.com/mandarm2593" target="_blank"><img src="github.png" style="heigth:30px;width:30px;border-radius:50%;margin:20px;">
 </a>
 </span>
-        <h1>Lets Stay in Touch!</h1>
-    </footer>
-  
-    <script>var options = {
-  strings: ["Computer Engineer", "Web Developer","Android Developer"],
-  typeSpeed: 50,
-            backSpeed:0,
-    loop:true        
-}
-
-var typed = new Typed(".typed", options);</script>
-    
-    </body>
-
+            
+            </div>
+            <div class="col-md-6">
+             
+                <form action="https://formspree.io/mmathure@syr.edu" method="POST">
+                 <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter Name" name="name"><br>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email" name="_replyto">
+                <br>
+      <textarea class="form-control" id="exampleTextarea" rows="3" placeholder="Message"></textarea>
+                   <br>
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+            
+            
+            </div>
+       
+           
+            
+           </div>
+           
+                    
+            
+          
+          
+          </div>
+   </body>
 </html>

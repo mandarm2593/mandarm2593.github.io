@@ -1,102 +1,31 @@
-html{
-box-sizing:border-box;
+#myDiv {
+    
+    background-image:url(background1.jpg);
+    color: azure !important;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 30px;
+    
+}
 
+#contact {
+        background-image:url(background1.jpg);
+        color:azure;
 
 }
 
-*,*:before,*:after{
-    box-sizing: inherit;
+.jumbotron {
+    border: 0 !important;
 
+    margin: auto;
+     height: 80%;  
+}
+
+.navbar {
+    border:0 !important;
 }
 
 body{
-font-family: 'Montserrat', sans-serif;
-margin: 0;
-background-color: whitesmoke;
-    color:black;
-}
-.jumbotron{
+    line-height: 30px;
     
-    background-image: url(background.jpg) !important;
-    color: azure !important;
-    background-size: cover;
-    height:50vw;
-}
-
-.container-fluid h1{
-    margin-top: 20vw;
-    color: lightgray;
-}
-
-a {
-    color: lightgray!important;
-    
-    
-}
-.navbar{
-    
-    border: 0;
-}
-
-
-
-.aboutme{
-    
-    color: black;
-    
-}
-
-.panel, .panel-body{
-    background-color: whitesmoke;
-    border:0 !important;
-    
-}
-
-img{
-    
-    height: 300px;
-    
-}
-#projects a{
-    
-    color: black!important;
-    clear: both;
-    
-}
-
-.clear{
-    clear: both;
-}
-
-.footer{
-    
-    background-color: 
-    black;
-    color: lightgray;
-}
-
-.icons{
-    font-size: 20px;
-    padding: 10px;
-    
-}
-
-a p{
-    color: black;
-    
-}
-
-a p:hover{
-    cursor: pointer;
-    
-    text-decoration: none !important;
-}
-
-footer{
-    padding: 20px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    height: 100px;
-    vertical-align: middle;
 }
